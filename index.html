@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Ulang Tahun</title>
+  <style>
+    body {
+      background-image: url('BG.jpeg');
+      /* Ganti dengan nama gambar latar belakang Anda */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-family: Roboto;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .container img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Silahkan tulis nama</h1>
+    <form action="page2.html" method="get">
+      <input type="text" id="nama" name="nama" required><br><br>
+      <input type="submit" value="Lanjutkan" class="btn">
+    </form>
+  </div>
+</body>
+
+</html>

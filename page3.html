@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Ulang Tahun</title>
+  <style>
+    body {
+      background-image: url('BG.jpeg');
+      /* Ganti dengan nama gambar latar belakang Anda */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-family: Roboto;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .container img {
+      width: 0px;
+      /* Ukuran logo WhatsApp */
+      height: auto;
+      margin-bottom: 10px;
+      /* Ruang antara logo WhatsApp dan teks */
+    }
+
+    .btn {
+      background-color: #FFFFFF;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .link {
+      color: #000080;
+      /* Warna biru */
+      text-decoration: none;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      /* Ruang antara kolom WhatsApp dan kolom Google Drive */
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 0 10px;
+    }
+
+    .column a {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    audio {
+      display: none;
+      /* Sembunyikan elemen audio */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Happy Birthday MY ANGEL, <span id="namaPlaceholder"></span>!</h1>
+    <p>Semoga ditahun ini kamu menjadi pribadi yang lebih baik lagi, apa yang kamu inginkan akan terwujud ditahun ini,
+      makin dekat dengan Tuhan, keluarga, dan aku hehehehehe, impianmu juga ditahun ini semoga menjadi kenyataan
+      semuanya maaf ya belum bisa kasih apa-apa selain ini hehehehehe, I LOVE YOU SAYANG</p>
+
+    <!-- Kolom WhatsApp -->
+    <div class="flex-container">
+      <div class="column">
+        <a href="https://wa.me/6281252525031" class="link" target="_blank">
+          <img src="Logo.png" alt="WhatsApp Logo">
+          Balas
+        </a>
+      </div>
+
+      <!-- Kolom Google Drive -->
+      <div class="column">
+        <a href="https://drive.google.com/file/d/1MSVOAvndqB8NvfUR620hHh8DyxPDRK_O/view?usp=drive_link" class="link"
+          target="_blank">Buka Ini Dong Maniezz</a>
+      </div>
+    </div>
+    <audio autoplay loop>
+      <source src="Music.mp3" type="audio/mp3"> <!-- Ganti 'music.mp3' dengan nama file audio Anda -->
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('nama');
+    document.getElementById('namaPlaceholder').textContent = nama;
+  </script>
+</body>
+
+</html>
